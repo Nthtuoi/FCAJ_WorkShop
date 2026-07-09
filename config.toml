@@ -1,6 +1,6 @@
 baseURL = "https://Nthtuoi.github.io/FCAJ_WorkShop/"
+canonifyURLs = true
 relativeURLs = false
-canonifyURLs = false
 defaultContentLanguage = "en"
 
 # Change the default theme to be use when building the site with Hugo
