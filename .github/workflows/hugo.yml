@@ -16,7 +16,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v4
         with:
-          submodules: true  # Tự động kéo theme về nếu bạn dùng Git Submodule
+          submodules: true  
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -34,5 +34,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          force_orphan: true
-          cname: workshop-audiototext.awsfcaj.com # <- BẮT BUỘC phải có dòng này để cố định domain riêng của bạn
+          force_orphan: true # <- Giữ dòng này để dọn dẹp các bản build cũ
